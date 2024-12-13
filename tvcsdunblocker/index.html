@@ -13,20 +13,13 @@
 
   <main>
     <!-- Game List -->
-    <div class="game-grid">
-      <div class="game-card" onclick="loadGame('https://<username>.github.io/game1/')">
-        <img src="images/game1-icon.png" alt="Game 1">
-        <p>Game 1</p>
-      </div>
-      <div class="game-card" onclick="loadGame('https://<username>.github.io/game2/')">
-        <img src="images/game2-icon.png" alt="Game 2">
-        <p>Game 2</p>
-      </div>
+    <div class="game-grid" id="gameContainer">
+      <!-- Game cards will be dynamically inserted here -->
     </div>
 
     <!-- Iframe for games -->
     <div class="iframe-container" id="iframeContainer">
-      <iframe id="gameIframe" src=""></iframe>
+      <iframe id="gameIframe" src="" style="display: none;"></iframe>
     </div>
   </main>
 
